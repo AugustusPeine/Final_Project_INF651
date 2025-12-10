@@ -29,8 +29,8 @@ This calendar is a dynamic web application desgined to help user manage their ta
 
 #### Task Management
 * Users have full control over their scheduled tasks:
-*  Adding/Editing: Tasks can be added or edited by clicking on any existing task. This opens the primary task modal.
-*  Mandatory Title: The primary task modal requires a title, with the description being optional.
+  * Adding/Editing: Tasks can be added or edited by clicking on any existing task. This opens the primary task modal.
+  * Mandatory Title: The primary task modal requires a title, with the description being optional.
   
 * Modal Interactions: The application uses two different modals for focused user interaction: one for adding/editing tasks and another for viewing the full list of tasks for a single day (triggered by the "+x" button).
 
@@ -40,17 +40,17 @@ This calendar is a dynamic web application desgined to help user manage their ta
 * This project is a standalone web application and requires no complex setup or external server.
 
 * Prerequisites
-*  A modern web browser (Chrome, Firefox, Edge, Safari, etc.).
-*  The three project files: index.html, styles.css, and script.js (assuming a standard structure).
+  * A modern web browser (Chrome, Firefox, Edge, Safari, etc.).
+  * The three project files: index.html, styles.css, and script.js (assuming a standard structure).
 
 * Steps to Launch
-*  Locate the Files: Ensure your index.html, styles.css, and script.js files are saved together in the same directory on your computer.
-*  Open index.html: Simply double-click the index.html file.
-*  The application will immediately open in your default web browser, ready to use.
+  * Locate the Files: Ensure your index.html, styles.css, and script.js files are saved together in the same directory on your computer.
+  * Open index.html: Simply double-click the index.html file.
+  * The application will immediately open in your default web browser, ready to use.
 
 #### Future Enhancements
 * Several potential improvements for future versions have been outlined in the pdf such as:
-*  Task Categorization: Adding categories, possibly with unique color codes, for better task tracking.
-*  Recurring Tasks: Implementing an option for scheduling tasks that repeat (e.g., "clean the room every Sunday").
-*  Drag-and-Drop: Adding drag-and-drop functionality to allow tasks to be moved easily between days.
-*  Backend Database: Transitioning data storage from local storage to a backend database to allow access across multiple devices.
+  * Task Categorization: Adding categories, possibly with unique color codes, for better task tracking.
+  * Recurring Tasks: Implementing an option for scheduling tasks that repeat (e.g., "clean the room every Sunday").
+  * Drag-and-Drop: Adding drag-and-drop functionality to allow tasks to be moved easily between days.
+  * Backend Database: Transitioning data storage from local storage to a backend database to allow access across multiple devices.
