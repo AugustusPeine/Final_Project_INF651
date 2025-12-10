@@ -1,56 +1,59 @@
 # Final_Project_INF651
 
 ## Interactive Calendar Due Date Tracker
-This calendar is a dynamic web application desgined to help user manage their tasks and due dates effectively. It utilizes HTML, CSS, and JavaScript to ensure a fluid, smooth, and interactive experience.
+This project is an interactive calendar designed dynamically to allow users to effectively manage their due dates. It makes use of HTML, CSS, and JavaScript to allow for a smooth and fluid experience. It is designed to refresh dynamically and include helpful features.
 
 ### Key Features
 
 #### Calendar Page
-* This is the center of the website. It showcases a calendar in which the user can select each day to add, edit, or remove tasks.
+* The Calendar Page is the main section of the website. It shows a month-by-month calendar in which the user can select any day to add, edit, or delete tasks.
 
-* Task Visibility: Tasks are displayed directly on their corresponding calendar day cell.
+* Task Visibility: Each task is displayed on top of the day it corresponds to.
 
-* Color Coding: Tasks are visually organized: red for past due dates and green for coming due dates.
+* Color Coding: Each task is either red or green. Green indicates its due date has not passed yet, while red indicates the opposite.
 
-* Lots of Tasks: If a day has more than two tasks, a "+x" button appears. This button is clickable to reveal and manage the rest of the day's tasks.
+* Lots of Tasks: When a day has more than two tasks, a +x button appears, which the user can click to see a list of the remaining tasks for that given day.
 
-* Dynamic Dates: The calendar updates instantly when users select a different month or year.
+* Dynamic Dates: Every time the user changes months, years, or makes an edit to the tasks, the calendar is updated dynamically.
 
 #### Dashboard Page
-* Accessible via the navigation bar, the Dashboard provides a comprehensive list of all tasks:
+* Accessible through the use of the navigation bar, the Dashboard provides a full list of all the tasks:
 
-* Categorization: Tasks are dynamically separated into "Past Due" and "Coming" sections based on the current day.
+* Categorization: According to the current day, tasks are separated into two sections: past due and coming due.
 
 * Search Functionality: The entire dashboard can be searched in real-time by the task's name, description, or date.
 
-* Empty State: A short message appears instructing users how to add tasks if the dashboard is empty.
+* Empty State: A simple message will appear if the dashboard is empty, indicating that no tasks have been added yet.
 
-* Editing: All tasks on the dashboard can be clicked to be edited.
+* Editing: Every task on the dashboard can be clicked and edited.
+
+#### About Page
+* Accessible through the use of the navigation bar, the About page provides a brief summary describing the project and its goals.
 
 #### Task Management
-* Users have full control over their scheduled tasks:
-  * Adding/Editing: Tasks can be added or edited by clicking on any existing task. This opens the primary task modal.
-  * Mandatory Title: The primary task modal requires a title, with the description being optional.
-  
-* Modal Interactions: The application uses two different modals for focused user interaction: one for adding/editing tasks and another for viewing the full list of tasks for a single day (triggered by the "+x" button).
+* Users have control over all of their tasks:
+  * Adding/Editing: Tasks can be added or edited by clicking on any existing task. This opens the primary task modal.
+  * Mandatory Title: The primary task modal requires a title, with the description being optional.
+  
+* Modal Interactions: The application uses two different modals for focused user interaction: one for adding/editing tasks and another for viewing the full list of tasks for a single day (triggered by the +x button).
 
-* Data Persistence: Task data is stored in the user's local browser storage, ensuring tasks are remembered even after closing the browser.
+* Data Persistence: All task data is stored in the user's local browser to ensure it remains after the website is closed.
 
 #### How to Run the Application
 * This project is a standalone web application and requires no complex setup or external server.
 
 * Prerequisites
-  * A modern web browser (Chrome, Firefox, Edge, Safari, etc.).
-  * The three project files: index.html, styles.css, and script.js (assuming a standard structure).
+  * A modern web browser (Chrome, Firefox, etc.).
+  * The three project files: index.html, styles.css, and script.js.
 
 * Steps to Launch
-  * Locate the Files: Ensure your index.html, styles.css, and script.js files are saved together in the same directory on your computer.
-  * Open index.html: Simply double-click the index.html file.
-  * The application will immediately open in your default web browser, ready to use.
+  * Locate the Files: Ensure your index.html, styles.css, and script.js files are saved together in the same directory on your computer.
+  * Open index.html: Simply double-click the index.html file.
+  * The application will immediately open in your default web browser, ready to use.
 
 #### Future Enhancements
-* Several potential improvements for future versions have been outlined in the pdf such as:
-  * Task Categorization: Adding categories, possibly with unique color codes, for better task tracking.
-  * Recurring Tasks: Implementing an option for scheduling tasks that repeat (e.g., "clean the room every Sunday").
-  * Drag-and-Drop: Adding drag-and-drop functionality to allow tasks to be moved easily between days.
-  * Backend Database: Transitioning data storage from local storage to a backend database to allow access across multiple devices.
+* Several potential improvements for future versions have been outlined in the PDF, such as:
+  * Task Categorization: Adding categories, possibly with unique color codes, for better task tracking.
+  * Recurring Tasks: Implementing an option for scheduling tasks that repeat (e.g., "clean the room every Sunday").
+  * Drag-and-Drop: Adding drag-and-drop functionality to allow tasks to be moved easily between days.
+  * Backend Database: Using a backend database to store the users' tasks and data would allow for seamless transition between devices
