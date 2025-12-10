@@ -1,0 +1,108 @@
+<!--
+    Interactive Calendar Due Date
+    Features:
+    - Add/edit tasks
+    - View upcoming tasks in dashboard
+    - Month and year selection
+    Author: Augustus Peine
+    Date: 12/09/2025
+-->
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Calendar Due Date</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Interactive Calendar Due Date</h1>
+
+        <!-- Navigation buttons for pages -->
+        <nav>
+            <button class="navigation-button active" data-page="calendar">Calendar</button>
+            <button class="navigation-button" data-page="dashboard">Dashboard</button>
+            <button class="navigation-button" data-page="about">About</button>
+        </nav>
+    </header>
+
+    <main>
+            <!-- Calendar -->
+        <section id="calendar-page" class="page active">
+            <div class="calendar-controls">
+
+                <!-- Previous month button-->
+                <button id="previous-month">&larr; Previous</button>
+
+                <!-- Selction for month and year -->
+                <div class="month-year-selects">
+                    <label for="month-select">Month:</label>
+                    <select id="month-select"></select>
+                    <label for="year-select">Year:</label>
+                    <select id="year-select"></select>
+                </div>
+
+                <!-- Next month button-->
+                <button id="next-month">Next &rarr;</button>
+            </div>
+
+            <!-- Grid for calendar -->
+            <div id="calendar-grid"></div>
+        </section>
+
+
+        <!-- Dashboard -->
+        <section id="dashboard-page" class="page">
+            <h2>Upcoming Tasks</h2>
+            <input type="text" id="search-tasks" placeholder="Search tasks..." />
+            <div id="dashboard-list"></div>
+            <p id="empty-dashboard">No tasks have been added. Use the calendar to add some!</p>
+        </section>
+
+
+        <!-- About -->
+        <section id="about-page" class="page">
+            <h2>About</h2>
+            <p>This interactive calendar is a dynamic web application that allows users to manage their tasks and due dates effectively. Users can add, edit, describe, and delete tasks on any day on the calendar. They can also view upcoming and past tasks in the dashboard. Tasks are color-coded to indicate past due and upcoming dates. The dashboard provides an overview of all tasks and supports real-time search by task title, description, or date. The calendar updates instantly when users change months, years, or task details. Navigation between pages—including Calendar, Dashboard, and About—is smooth and dynamic.</p>
+        </section>
+    </main>
+
+    <!-- Task Modal -->
+    <div id="task-modal" class="modal hidden">
+        <div class="modal-content">
+            <h3 id="modal-title">Add/Edit Tasks</h3>
+            <form id="task-form">
+                <input type="hidden" id="task-id">
+                <label>Date:</label>
+                <input type="date" id="task-date" required readonly>
+                <label>Title*:</label>
+                <input type="text" id="task-title" required>
+                <label>Description:</label>
+                <textarea id="task-description" rows="3"></textarea>
+                <div class="modal-buttons">
+                    <button type="button" id="delete-task-button" class="hidden">Delete</button>
+                    <button type="submit">Save</button>
+                    <button type="button" id="close-modal-button">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Day Tasks Modal -->
+    <div id="day-tasks-modal" class="modal hidden">
+        <div class="modal-content">
+            <h3>Tasks on <span id="tasks-date-label"></span></h3>
+            <div id="tasks-list"></div>
+            <div class="modal-buttons">
+                <button id="close-tasks-modal-button">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
